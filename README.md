@@ -102,3 +102,11 @@ access to large data sets on local storage
 
 > t2.micro is part of the AWS free tier (up to 750 hours per month)
 
+# Introduction to Security Groups
++ Security Groups are the fundamental of network security in AWS
++ They control how traffic is allowed into or out of our EC2 Instances.
+![Security Groups](https://github.com/AvinashSharma1/aws-solutions-architect-associate-SAA-C03-notes/blob/master/Security%20Groups/Security%20Groups.PNG?raw=true "Security Groups")
++ Security groups only contain rules
++ Security groups rules can reference by IP or by security group
+
+
