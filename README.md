@@ -46,5 +46,59 @@
     
     ```
 ## EC2 Instance Types - Overview
-    
-    
+ + You can use different types of EC2 instances that are optimised for 
+different use cases (https://aws.amazon.com/ec2/instance-types/)
+
+ + AWS has the following naming convention:
+    > m5.2xlarge
+ + m: instance class
+ + 5: generation (AWS improves them over time)   
+ + 2xlarge: size within the instance class
+
+## EC2 Instance Types – General Purpose
++ Great for a diversity of workloads such as web servers or code repositories
++ Balance between:
+    + Compute
+    + Memory
+    + Networking
++ In the course, we will be using the t2.micro which is a General Purpose EC2 
+instance
+
+## EC2 Instance Types – Compute Optimized
++ Great for compute-intensive tasks that require high performance 
+processors:
+    + Batch processing workloads
+    + Media transcoding
+    + High performance web servers
+    + High performance computing (HPC)
+    + Scientific modeling & machine learning
+    + Dedicated gaming servers
+
+## EC2 Instance Types – Memory Optimized
++ • Fast performance for workloads that process large data sets in memory
++ Use cases: 
+    + High performance, relational/non-relational databases
+    + Distributed web scale cache stores
+    + In-memory databases optimized for BI (business intelligence)
+    + Applications performing real-time processing of big unstructured data
+
+## EC2 Instance Types – Storage Optimized
++ Great for storage-intensive tasks that require high, sequential read and write 
+access to large data sets on local storage
++ Use cases:
+    + High frequency online transaction processing (OLTP) systems
+    + Relational & NoSQL databases
+    + Cache for in-memory databases (for example, Redis)
+    + Data warehousing applications
+    + Distributed file systems
+### EC2 Instance Types: example
+| Instance    | vCPU | Mem (GiB) | Storage          | Network Performance | EBS Bandwidth (Mbps) |
+|-------------|------|-----------|------------------|---------------------|----------------------|
+| t2.micro    | 1    | 1         | EBS-Only         | Low to Moderate     |                      |
+| t2.xlarge   | 4    | 16        | EBS-Only         | Moderate            |                      |
+| c5d.4xlarge | 16   | 32        | 1 x 400 NVMe SSD | Up to 10 Gbps       | 4,750                |
+| r5.16xlarge | 64   | 512       | EBS-Only         | 20 Gbps             | 13,600               |
+| m5.8xlarge  | 32   | 128       | EBS-Only         | 10 Gbps             | 6,800                |
+
+> t2.micro is part of the AWS free tier (up to 750 hours per month)
+
