@@ -184,7 +184,7 @@ Diagram")
 + **Convertible Reserved Instance**
     + Can change the EC2 instance type, instance family, OS, scope and tenancy
     + Up to 66% discount
-    
+
 ## EC2 Savings Plans
 + Get a discount based on long-term usage (up to 72% - same as RIs)
 + Commit to a certain type of usage ($10/hour for 1 or 3 years)
@@ -207,3 +207,14 @@ current spot price
     + Any **distributed** workloads
     + Workloads with a flexible start and end time
 + **Not suitable for critical jobs or databases**
+
+## EC2 Dedicated Hosts
++ A physical server with EC2 instance capacity fully dedicated to your use
++ Allows you address **compliance requirements** and **use your existing server- bound software licenses** (per-socket, per-core, pe—VM software
++ Purchasing Options:
+    + **On-demand** – pay per second for active Dedicated Host
+    + **Reserved** - 1 or 3 years (No Upfront, Partial Upfront, All Upfront)
++ The most expensive option
++ Useful for software that have complicated licensing model (BYOL – Bring Your Own License)
++ Or for companies that have strong regulatory or compliance needs
+
