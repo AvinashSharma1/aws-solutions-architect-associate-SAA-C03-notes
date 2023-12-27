@@ -218,3 +218,12 @@ current spot price
 + Useful for software that have complicated licensing model (BYOL – Bring Your Own License)
 + Or for companies that have strong regulatory or compliance needs
 
+## EC2 Dedicated Instances
++ Instances run on hardware that’s 
+dedicated to you
++  May share hardware with other 
+instances in same account
++ No control over instance placement 
+(can move hardware after Stop / Start)
+
+
