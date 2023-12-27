@@ -146,5 +146,9 @@ Diagram")
 + 443 = HTTPS – access secured websites
 + 3389 = RDP (Remote Desktop Protocol) – log into a Windows instance
 
+## SSH Summary Table
+![alt text](Image link "Hover Text")
+
+## How to SSH into your EC2 Instance Linux / Mac OS X
 
 
