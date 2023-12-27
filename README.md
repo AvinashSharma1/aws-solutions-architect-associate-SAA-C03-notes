@@ -173,3 +173,37 @@ Diagram")
 + Recommended for **short-term** and **un-interrupted workloads**, where you can't predict how the application will behave
 
 
+## EC2 Reserved Instances
++ Up to 72% discount compared to On-demand
++ You reserve a specific instance attributes (**Instance Type, Region, Tenancy, OS**)
++ **Reservation Period – 1 year** (+discount) or **3 years** (+++discount)
++ **Payment Options – No Upfront (+), Partial Upfront (++), All Upfront (+++)**
++ **Reserved Instance’s Scope – Regional or Zonal** (reserve capacity in an AZ)
++ Recommended for steady-state usage applications (think database)
++ You can buy and sell in the Reserved Instance Marketplace
++ **Convertible Reserved Instance**
+    + Can change the EC2 instance type, instance family, OS, scope and tenancy
+    + Up to 66% discount
+    
+## EC2 Savings Plans
++ Get a discount based on long-term usage (up to 72% - same as RIs)
++ Commit to a certain type of usage ($10/hour for 1 or 3 years)
++ Usage beyond EC2 Savings Plans is billed at the On-Demand price
++ Locked to a specific instance family & AWS region (e.g., M5 in us-east-1)
++ Flexible across:
+    + Instance Size (e.g., m5.xlarge, m5.2xlarge)
+    + OS (e.g., Linux, Windows)
+    + Tenancy (Host, Dedicated, Default)
+
+## EC2 Spot Instances
++ Can get a **discount of up to 90%** compared to On-demand
++ Instances that you can “lose” at any point of time if your max price is less than the 
+current spot price
++ The **MOST cost-efficient** instances in AWS
++ Useful for workloads that are resilient to failure
+    + Batch jobs
+    + Data analysis
+    + Image processing
+    + Any **distributed** workloads
+    + Workloads with a flexible start and end time
++ **Not suitable for critical jobs or databases**
