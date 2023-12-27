@@ -233,3 +233,56 @@ instances in same account
 + Combine with Regional Reserved Instances and Savings Plans to benefit from billing discounts
 + You’re charged at On-Demand rate whether you run instances or not
 + Suitable for short-term, uninterrupted workloads that needs to be in a specific AZ
+
+## Which purchasing option is right for me?
++ **On demand:** coming and staying in resort
++ **Reserved:** like planning ahead and if we plan to stay for a long time, we may get a good discount.
++ **Savings Plans:** pay a certain amount per hour for certain period and stay in any room type (e.g., 
+King, Suite, Sea View, …)
++ **Spot instances:** the hotel allows people to bid for the empty rooms and the highest bidder keeps the 
+rooms. You can get kicked out at any time
++ **Dedicated Hosts:** We book an entire building of the resort.
++ **Capacity Reservations:** you book a room for a period with full price even you don’t stay
+
+## Price Comparison Example – m4.large – us-east-1
+|**Price Type**      |  **Price (per hour)**           |
+| ------------- |:-------------:|
+| On-Demand     | $0.10  |
+| Spot Instance (Spot Price)     | $0.038 - $0.039 (up to 61% off) |
+| Reserved Instance (1 year)     | $0.062 (No Upfront) - $0.058 (All Upfront)  |
+| Reserved Instance (3 years)    | $0.043 (No Upfront) - $0.037 (All Upfront)  |
+| EC2 Savings Plan (1 year)     | $0.062 (No Upfront) - $0.058 (All Upfront) |
+| Reserved Convertible Instance (1 year)     | $0.071 (No Upfront) - $0.066 (All Upfront)  |
+| Dedicated Host     | On-Demand Price  |
+| Dedicated Host Reservation     | Up to 70% off |
+| Capacity Reservations     | On-Demand Price
+  |
+
+## EC2 Spot Instance Requests
++ Can get a discount of up to 90% compared to On-demand
++ Define **max spot price** and get the instance while **current spot price < max**
+    + The hourly spot price varies based on offer and capacity
+    + If the current spot price > your max price you can choose to **stop** or **terminate** your instance with a 2 minutes grace period.
++ Other strategy: **Spot Block**
++ **Used for batch jobs, data analysis, or workloads that are resilient to failures.**
++ **Not great for critical jobs or databases**
+
+## EC2 Spot Instances Pricing
+![EC2 Spot Instances Pricing](![Alt text](image.png) "EC2 Spot Instances Pricing")
+
+## How to terminate Spot Instances?
+![How to terminate Spot Instances?](https://github.com/AvinashSharma1/aws-solutions-architect-associate-SAA-C03-notes/blob/master/ec2/How_to_terminate_Spot_Instances.PNG?raw=true "How to terminate Spot Instances?")
+
+## Spot Fleets
++ Spot Fleets = set of Spot Instances + (optional) On-Demand Instances
++ The Spot Fleet will try to meet the target capacity with price constraints
+    + Define possible launch pools: instance type (m5.large), OS, Availability Zone
+    + Can have multiple launch pools, so that the fleet can choose
+    + Spot Fleet stops launching instances when reaching capacity or max cost
++ Strategies to allocate Spot Instances:
+    + **lowestPrice:** from the pool with the lowest price (cost optimization, short workload)
+    + **diversified:** distributed across all pools (great for availability, long workloads)
+    + **capacityOptimized:** pool with the optimal capacity for the number of instances
+    + **priceCapacityOptimized (recommended):** pools with highest capacity available, then select 
+the pool with the lowest price (best choice for most workloads)
++ Spot Fleets allow us to automatically request Spot Instances with the lowest price
