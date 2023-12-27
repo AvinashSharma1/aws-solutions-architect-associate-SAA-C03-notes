@@ -147,8 +147,20 @@ Diagram")
 + 3389 = RDP (Remote Desktop Protocol) – log into a Windows instance
 
 ## SSH Summary Table
-![alt text](Image link "Hover Text")
+![SSH Summary Table](https://github.com/AvinashSharma1/aws-solutions-architect-associate-SAA-C03-notes/blob/master/ssh/SSH-summary-table.PNG?raw=true "SSH Summary Table")
 
 ## How to SSH into your EC2 Instance Linux / Mac OS X
 
+![SSH Connect](https://github.com/AvinashSharma1/aws-solutions-architect-associate-SAA-C03-notes/blob/master/ssh/ssh-connect-ec-instance-linux-macos.PNG?raw=true "SSH Connect")
+
+## EC2 Instances Purchasing Options
++ **On-Demand Instances** – short workload, predictable pricing, pay by second
++ **Reserved** (1 & 3 years)
+    + **Reserved Instances** – long workloads
+    + **Convertible Reserved Instances** – long workloads with flexible instances
++ **Savings Plans** (1 & 3 years) –commitment to an amount of usage, long workload
++ **Spot Instances** – short workloads, cheap, can lose instances (less reliable)
++ **Dedicated Hosts** – book an entire physical server, control instance placement
++ **Dedicated Instances** – no other customers will share your hardware
++ **Capacity Reservations** – reserve capacity in a specific AZ for any duration
 
