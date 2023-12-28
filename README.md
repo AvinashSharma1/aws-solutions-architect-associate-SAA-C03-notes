@@ -344,5 +344,17 @@ the pool with the lowest price (best choice for most workloads)
         + Big Data job that needs to complete fast
         + Application that needs extremely low latency and high network throughput
     ### Placement Groups Spread
+    ![Placement Groups Spread](https://raw.githubusercontent.com/AvinashSharma1/aws-solutions-architect-associate-SAA-C03-notes/b7e870842634d784682e8690edc7189856a16d14/placement-group/Placement-Groups-Spread.PNG "Placement Groups Spread")
+    + **Pros:**
+        + Can span across Availability Zones (AZ)
+        + Reduced risk is simultaneous failure
+        + EC2 Instances are on different physical hardware
+    + **Cons:**
+        + Limited to 7 instances per AZ per placement group
+    + **Use case:**
+        + Application that needs to maximize high availability
+        + Critical Applications where each instance must be isolated from failure from each other
         
+
+
 
