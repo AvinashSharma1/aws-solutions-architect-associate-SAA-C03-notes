@@ -365,6 +365,19 @@ the pool with the lowest price (best choice for most workloads)
     + EC2 instances get access to the partition information as metadata
     + Use cases: HDFS, HBase, Cassandra, Kafka
 
+## Elastic Network Interfaces (ENI)
++ Logical component in a VPC that represents a virtual network card
+    + Primary private IPv4, one or more secondary IPv4
+    + One Elastic IP (IPv4) per private IPv4
+    + One Public IPv4
+    + One or more security groups
+    + A MAC address
+
+    ![Elastic Network Interfaces (ENI)](https://github.com/AvinashSharma1/aws-solutions-architect-associate-SAA-C03-notes/blob/master/eni/eni.PNG?raw=true "Elastic Network Interfaces (ENI)")
++ The ENI can have the following attributes:
++ You can create ENI independently and attach them on the fly (move them) on EC2 instances for failover
++ Bound to a specific availability zone (AZ)
+
 
 
 
