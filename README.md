@@ -354,7 +354,18 @@ the pool with the lowest price (best choice for most workloads)
     + **Use case:**
         + Application that needs to maximize high availability
         + Critical Applications where each instance must be isolated from failure from each other
+    ### Placements Groups Partition
+    ![Placements Groups Partition](https://github.com/AvinashSharma1/aws-solutions-architect-associate-SAA-C03-notes/blob/master/placement-group/Placements-Groups-Partition.PNG?raw=true "Placements Groups Partition")
         
+    + Up to 7 partitions per AZ
+    + Can span across multiple AZs in the same region
+    + Up to 100s of EC2 instances
+    + The instances in a partition do not share racks with the instances in the other partitions
+    + A partition failure can affect many EC2 but won’t affect other partitions
+    + EC2 instances get access to the partition information as metadata
+    + Use cases: HDFS, HBase, Cassandra, Kafka
+
+
 
 
 
